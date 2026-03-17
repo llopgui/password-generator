@@ -1,0 +1,15 @@
+{
+    "modo": "embebido",
+    "archivos": {
+        "santos": "dict/santos.dict",
+        "senas": "dict/senas.dict",
+        "contrasenyas": "dict/contrasenyas.dict"
+    },
+    "formato": {
+        "case": "original",
+        "separador": " "
+    },
+    "evitar_repeticiones": true,
+    "historial_max": 50,
+    "semilla": null
+}

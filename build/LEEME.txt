@@ -1,0 +1,34 @@
+========================================
+  PASSWORD GENERATOR
+  Crear ejecutable (.exe)
+========================================
+
+REQUISITOS
+----------
+- Python 3.12 o superior con Tcl/Tk instalado
+- pip (gestor de paquetes de Python)
+
+CÓMO GENERAR EL EJECUTABLE
+--------------------------
+
+Windows (PowerShell):
+  .\build\build.ps1
+
+Desde la raíz del proyecto:
+  pyinstaller --clean --noconfirm build\password-generator.spec
+
+RESULTADO
+---------
+El archivo password-generator.exe se creará en la carpeta:
+  dist\password-generator.exe
+
+DISTRIBUCIÓN
+------------
+- Copia dist\password-generator.exe donde quieras
+- La app usa listas embebidas por defecto (no necesita archivos externos)
+- config.json se crea junto al .exe la primera vez que cambies opciones
+- Si usas modo "Archivos", configura las rutas a tus .dict en el menú
+
+TAMAÑO APROXIMADO
+-----------------
+El .exe suele ocupar entre 15 y 30 MB (incluye Python y Tkinter).
