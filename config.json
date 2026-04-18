@@ -1,15 +1,34 @@
 {
     "modo": "embebido",
+    "modo_generacion": "secure",
     "archivos": {
         "santos": "dict/santos.dict",
         "senas": "dict/senas.dict",
         "contrasenyas": "dict/contrasenyas.dict"
     },
     "formato": {
-        "case": "original",
+        "case": "minusculas",
         "separador": " "
     },
     "evitar_repeticiones": true,
     "historial_max": 50,
-    "semilla": null
+    "semilla": "321321321321321",
+    "clipboard": {
+        "auto_copiar": false,
+        "limpiar_segundos": 30
+    },
+    "seguridad": {
+        "longitud_minima": 16,
+        "tokens_distintos_min": 3,
+        "separadores_permitidos": [
+            " ",
+            "-",
+            "_",
+            "|",
+            ".",
+            ":",
+            "/"
+        ],
+        "palabras_diceware": 5
+    }
 }
