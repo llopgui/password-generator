@@ -13,16 +13,17 @@ dependencies = ["pyperclip>=1.9.0"]
 
 [project.optional-dependencies]
 dev = [
+    "mypy>=1.15.0",
+    "pyinstaller>=6.13.0",
     "pytest>=8.3.0",
     "ruff>=0.11.0",
-    "mypy>=1.15.0",
 ]
 
 [project.scripts]
 password-generator = "password_generator.ui:run_app"
 
 [tool.setuptools]
-packages = ["password_generator", "password_generator.testsuite"]
+packages = ["password_generator"]
 
 [tool.ruff]
 line-length = 100
@@ -33,7 +34,7 @@ select = ["E", "F", "W", "I", "UP", "B"]
 
 [tool.pytest.ini_options]
 minversion = "8.0"
-testpaths = ["password_generator/testsuite"]
+testpaths = ["tests/unit"]
 python_files = ["test_*.py"]
 
 [tool.mypy]

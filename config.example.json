@@ -1,18 +1,18 @@
 {
     "modo": "embebido",
-    "modo_generacion": "secure",
+    "modo_generacion": "memorable",
     "archivos": {
         "santos": "dict/santos.dict",
         "senas": "dict/senas.dict",
         "contrasenyas": "dict/contrasenyas.dict"
     },
     "formato": {
-        "case": "minusculas",
+        "case": "original",
         "separador": " "
     },
-    "evitar_repeticiones": true,
+    "evitar_repeticiones": false,
     "historial_max": 50,
-    "semilla": "321321321321321",
+    "semilla": null,
     "clipboard": {
         "auto_copiar": false,
         "limpiar_segundos": 30
@@ -29,6 +29,6 @@
             ":",
             "/"
         ],
-        "palabras_diceware": 5
+        "palabras_diceware": 6
     }
 }
